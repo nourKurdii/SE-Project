@@ -4,4 +4,3 @@ Feature: empty the cart
     Given user logs in and one item is already added to the cart
     When user opens the cart and presses delete button
     Then cart quantity will be "0"
-    

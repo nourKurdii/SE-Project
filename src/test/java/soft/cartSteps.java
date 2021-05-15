@@ -27,16 +27,23 @@ public class cartSteps {
 		try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
 		
 		driver.findElement(By.xpath("//a[@id='nav-link-accountList']")).click();
-		try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
+		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
-		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("s11821365@stu.najah.edu");
+		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("noor.kurdi073@gmail.com");
 		driver.findElement(By.xpath("//input[@id='continue']")).click();
-		try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
+		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("1234password");
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-		try {Thread.sleep(3000);} catch (InterruptedException e2) {e2.printStackTrace();}
+		try {Thread.sleep(3000);} catch (InterruptedException e) {e.printStackTrace();}
 		
+	/*	driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("1234password");
+		try {Thread.sleep(30000);} catch (InterruptedException e) {e.printStackTrace();}
+		
+		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+		
+		try{Thread.sleep(3000);}catch (InterruptedException e) {e.printStackTrace();}
+		*/
 	}
 
 	@When("user opens the cart and presses delete button")
@@ -44,7 +51,7 @@ public class cartSteps {
 	{
 		
 		driver.findElement(By.xpath("//a[@id='nav-cart']")).click();
-		 try {Thread.sleep(6000);} catch (InterruptedException e2) {e2.printStackTrace();}
+		 try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
 		
 		driver.findElement(By.xpath("//body/div[@id='a-page']/div[4]/div[1]/div[2]/div[2]/div[1]/div[2]/div[4]/div[1]/form[1]/div[2]/div[3]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[2]/span[1]/input[1]")).click();
 		try {Thread.sleep(3000);} catch (InterruptedException e2) {e2.printStackTrace();}

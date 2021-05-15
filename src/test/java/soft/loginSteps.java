@@ -1,6 +1,5 @@
 package soft;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -34,8 +33,14 @@ public void userEntersAnd(String string, String string2)
 	
 	driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys(pass);
 	driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-	try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
+	try {Thread.sleep(3000);} catch (InterruptedException e) {e.printStackTrace();}
 	
+	driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys(pass);
+	try {Thread.sleep(30000);} catch (InterruptedException e) {e.printStackTrace();}
+	
+	driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+	
+	try{Thread.sleep(3000);}catch (InterruptedException e) {e.printStackTrace();}
 	title=driver.getTitle();
 	try{Thread.sleep(2000);}catch (InterruptedException e) {e.printStackTrace();}
 	driver.quit();

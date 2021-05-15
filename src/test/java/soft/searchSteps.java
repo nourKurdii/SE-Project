@@ -31,13 +31,20 @@ public class searchSteps {
 		driver.findElement(By.xpath("//a[@id='nav-link-accountList']")).click();
 		try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
 		
-		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("s11821365@stu.najah.edu");
+		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("noor.kurdi073@gmail.com");
 		driver.findElement(By.xpath("//input[@id='continue']")).click();
 		try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
 		
 		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("1234password");
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-		try {Thread.sleep(3000);} catch (InterruptedException e2) {e2.printStackTrace();}
+		try {Thread.sleep(2000);} catch (InterruptedException e2) {e2.printStackTrace();}
+		
+		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("1234password");
+		try {Thread.sleep(30000);} catch (InterruptedException e) {e.printStackTrace();}
+		
+		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+		
+		try{Thread.sleep(3000);}catch (InterruptedException e) {e.printStackTrace();}
 		
 	}
 	
